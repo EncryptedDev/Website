@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin-top: 80px;
+  background-color: #16171B; color: white;
+}
+
+.name {
+  margin-left: 250px;
+}
+
+.container {
+  margin-top: 116px;
+}
+
+.description {
+  margin-left: 250px;
+  margin-top: 16px;
+}
+
+.description-text {
+  line-height: 20px;
+}
