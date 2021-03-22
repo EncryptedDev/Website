@@ -1,15 +1,20 @@
 <template>
   <div>
-    <app-navbar />
+    <div>
+      <ul class="text-center w-auto">
+        <nuxt-link to="/" class="inline px-4">home</nuxt-link>
+        <nuxt-link to="/projects" class="inline px-4 font-bold">projects</nuxt-link>
+      </ul>
+    </div>
     <div class="container">
-      <h1 class="font-bold text-3xl name">EncryptedDev</h1>
+      <h1 class="fade-in-title font-bold text-3xl name">EncryptedDev</h1>
       <div class="description">
-        <p class="description-text">
+        <p class="fade-in-description description-text text-xl text-gray-300 mt-6">
           an aspiring full-stack software developer
         </p>
-        <p class="description-text">from London, England</p>
-        <div class="flex flex-row mt-3">
-          <div class="h-6 w-6 mr-5">
+        <p class="fade-in-description text-xl text-gray-300 mt-2">from London, England</p>
+        <div class="flex flex-row mt-6">
+          <div class="fade-in-I1 h-6 w-6 mr-5 hover:text-gray-300">
             <a href="https://discordapp.com">
               <svg
                 aria-hidden="true"
@@ -27,7 +32,7 @@
                 ></path></svg
             ></a>
           </div>
-          <div class="h-6 w-6 mr-5">
+          <div class="fade-in-I2 h-6 w-6 mr-5 hover:text-gray-300">
             <a href="https://github.com/EncryptedDev">
               <svg
                 aria-hidden="true"
@@ -45,7 +50,7 @@
                 ></path></svg
             ></a>
           </div>
-          <div class="h-6 w-6 mr-5">
+          <div class="fade-in-I3 h-6 w-6 mr-5 hover:text-gray-300">
             <a href="https://twitter/Encrypted__UK">
               <svg
                 aria-hidden="true"
@@ -68,10 +73,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import AppNavbar from "../components/AppNavbar";
-export default {
-  components: { AppNavbar },
-};
-</script>
