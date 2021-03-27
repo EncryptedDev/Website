@@ -10,7 +10,6 @@
       </p>
       <div class="flex flex-row mt-6">
         <GitHubIcon />
-        <DiscordIcon />
         <TwitterIcon />
       </div>
     </div>
@@ -25,10 +24,9 @@
 
 <script>
 import GitHubIcon from "./Icons/GitHub";
-import DiscordIcon from "./Icons/Discord";
 import TwitterIcon from "./Icons/Twitter";
 
 export default {
-  components: { GitHubIcon, DiscordIcon, TwitterIcon },
+  components: { GitHubIcon, TwitterIcon },
 };
 </script>
