@@ -1,6 +1,6 @@
 <template>
   <div class="h-6 w-6 mr-5 dark:text-gray-300 hover:text-gray-300">
-    <a href="https://twitter/Encrypted__UK">
+    <a href="https://twitter.com/Encrypted_UK">
       <svg
         aria-hidden="true"
         focusable="false"
