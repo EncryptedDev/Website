@@ -1,6 +1,6 @@
 <template>
   <div class="text-black dark:text-white">
-    <div @click="changeTheme" class="w-8" v-if="currentTheme == 'light'">
+    <div @click="changeTheme" class="fixed w-8 bg-gray-200 rounded-lg p-1 dark:text-black" v-if="currentTheme == 'light'">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -15,7 +15,7 @@
         />
       </svg>
     </div>
-    <div @click="changeTheme" class="w-8" v-if="currentTheme != 'light'">
+    <div @click="changeTheme" class="fixed w-8 bg-white rounded-lg p-1 dark:text-black" v-if="currentTheme != 'light'">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
