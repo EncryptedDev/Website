@@ -1,5 +1,5 @@
 <template>
-  <div class="fade-in-I1 h-6 w-6 mr-5 hover:text-gray-300">
+  <div class="fade-in-I1 h-8 w-6 mr-5 hover:text-gray-300">
     <a href="https://discordapp.com">
       <svg
         aria-hidden="true"
