@@ -6,18 +6,27 @@
       >
         projects & experiences
       </h1>
-      <div class="py-20">
+      <div class="">
+        <div
+          class="mt-10 border-black border rounded-3xl py-4 px-8 transform ease-in-out duration-200 dark:text-white dark:border-white hover:scale-105 max-w-xs"
+        >
+          <h2 class="text-xl font-semibold dark:text-white text-black text-center">
+            PreMiD
+          </h2>
+          <p class="dark:text-white text-black inline">
+            <i class="fas fa-info-circle"></i> PreMiD is a simple, configurable
+            utility that allows you to show what you're...
+          </p>
+          <p><i class="fas fa-user"></i> Support Agent</p>
+          <p><i class="fas fa-calendar-alt"></i> 27th Feburary 2021 -</p>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import ProjectCard from "./Templates/ProjectCard";
-
 export default {
-  components: { ProjectCard },
-
   data() {
     return {
       projects: [
