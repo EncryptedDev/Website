@@ -1,5 +1,5 @@
 <template>
-  <div class="fade-in-I2 h-6 w-6 mr-5 hover:text-gray-300">
+  <div class="h-6 w-6 mr-5 dark:text-gray-300 hover:text-gray-300">
     <a href="https://github.com/EncryptedDev">
       <svg
         aria-hidden="true"
