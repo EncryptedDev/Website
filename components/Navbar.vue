@@ -1,30 +1,50 @@
 <template>
-    <header class="flex flex-row mb-20">
-      <div class="header">
-        <h1 class="fade-in-title font-bold text-3xl">EncryptedDev</h1>
-        <p
-          class="fade-in-description description-text text-xl text-gray-300 mt-6"
-        >
-          an aspiring full-stack software developer
-        </p>
-        <p class="fade-in-description text-xl text-gray-300 mt-2">
-          from London, England
-        </p>
-        <div class="flex flex-row mt-6">
-          <GitHubIcon />
-          <DiscordIcon />
-          <TwitterIcon />
-        </div>
-      </div>
-    </header>
+  <div class="text-black dark:text-white">
+    <div @click="changeTheme" class="w-8" v-if="currentTheme == 'light'">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+        />
+      </svg>
+    </div>
+    <div @click="changeTheme" class="w-8" v-if="currentTheme != 'light'">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+        />
+      </svg>
+    </div>
+  </div>
 </template>
 
 <script>
-import GitHubIcon from "./Icons/GitHub";
-import DiscordIcon from "./Icons/Discord";
-import TwitterIcon from "./Icons/Twitter";
-
 export default {
-  components: { GitHubIcon, DiscordIcon, TwitterIcon },
+  computed: {
+    currentTheme() {
+      return this.$colorMode.value;
+    },
+  },
+  methods: {
+    changeTheme() {
+      this.$colorMode.preference =
+        this.currentTheme === "dark" ? "light" : "dark";
+    },
+  },
 };
 </script>

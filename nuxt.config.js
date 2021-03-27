@@ -11,7 +11,7 @@ export default {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
-  css: ["~/assets/css/style.css", "~/assets/css/animation.css"],
+  css: ["~/assets/css/style.css"],
   components: true,
-  buildModules: ["@nuxtjs/tailwindcss"],
+  buildModules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
 };
