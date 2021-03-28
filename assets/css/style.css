@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: BasierCircle;
+  src: url(https://d33wubrfki0l68.cloudfront.net/d9d1ffe0360c1e4a8e31ee8ec6121bf6a9e0b419/cc990/_assets/_fonts/basiercircle-bold-webfont.woff);
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: BasierCircle;
+  src: url(https://d33wubrfki0l68.cloudfront.net/a545cfba16f649460ece0ea3973693f5eff74082/56560/_assets/_fonts/basiercircle-regular-webfont.woff);
+}
+
+.heading {
+  font-family: BasierCircle;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.content {
+  font-family: BasierCircle;
+  font-weight: 500;
+}
+
+.backgroundDark {
+  background-color: #111111;
+}
