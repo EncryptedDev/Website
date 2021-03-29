@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import DiscordModal from "../components/About/DiscordModal";
+// import DiscordModal from "../components/About/DiscordModal";
 import Introduction from "../components/About/Introduction";
 import Setup from "../components/About/Setup";
 import Socials from "../components/About/Socials";
 
 export default {
-  components: { DiscordModal, Introduction, Setup, Socials },
+  components: { Introduction, Setup, Socials },
 };
 </script>
