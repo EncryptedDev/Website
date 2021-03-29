@@ -1,4 +1,8 @@
 export default {
+  server: {
+    host: "0.0.0.0",
+    port: 7788,
+  },
   head: {
     script: [
       {
@@ -12,7 +16,22 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      { hid: "theme-color", name: "theme-color", content: "#A78BFA" },
+      {
+        hid: "og:site_name",
+        name: "og:site_name",
+        content: "EncryptedDev",
+      },
+      {
+        hid: "description",
+        name: "description",
+        content: "An aspiring developer. A developer's portfolio.",
+      },
+      {
+        hid: "og:image",
+        name: "og:image",
+        content: "https://encrypteddev.com/assets/img/logo.png",
+      },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/logo.png" }],
   },
