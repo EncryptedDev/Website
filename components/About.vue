@@ -5,19 +5,22 @@
         About <span class="text-purple-400"> me</span>
       </h1>
       <Introduction />
-      <div class="lg:flex lg:flex-row lg:gap-4 mt-5"><Setup /><Setup /></div>
+      <div class="lg:flex lg:flex-row lg:gap-4 mt-5">
+        <Setup />
+        <DiscordModal />
+      </div>
       <Socials />
     </div>
   </div>
 </template>
 
 <script>
-// import DiscordModal from "../components/About/DiscordModal";
+import DiscordModal from "../components/About/DiscordModal";
 import Introduction from "../components/About/Introduction";
 import Setup from "../components/About/Setup";
 import Socials from "../components/About/Socials";
 
 export default {
-  components: { Introduction, Setup, Socials },
+  components: { DiscordModal, Introduction, Setup, Socials },
 };
 </script>
