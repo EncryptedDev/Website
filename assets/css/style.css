@@ -16,6 +16,10 @@
   src: url(https://d33wubrfki0l68.cloudfront.net/a545cfba16f649460ece0ea3973693f5eff74082/56560/_assets/_fonts/basiercircle-regular-webfont.woff);
 }
 
+body {
+    background-color: #111111;
+}
+
 .heading {
   font-family: BasierCircle;
   font-weight: 700;
