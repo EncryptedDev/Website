@@ -18,11 +18,11 @@
         <i class="fab fa-github"></i> GitHub
       </a>
     </div>
-    <a
+    <!-- <a
       href="mailto:help@encrypteddev.com"
       class="bg-darkGrey rounded-3xl mt-3 mb-5 lg:w-1/5 lg:py-3 lg:px-10 content hover:bg-lightGrey transform hover:scale-105 hover:text-purple-400"
     >
       <i class="fas fa-envelope"></i> help@encrypteddev.com
-    </a>
+    </a> -->
   </div>
 </template>
