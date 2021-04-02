@@ -1,8 +1,8 @@
 export default {
-  // server: {
-  //   host: "0.0.0.0",
-  //   port: 7788,
-  // },
+  server: {
+    //   host: "0.0.0.0",
+    port: 7788,
+  },
   head: {
     script: [
       {
@@ -37,5 +37,9 @@ export default {
   },
   css: ["~/assets/css/style.css"],
   components: true,
-  buildModules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
+  buildModules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "@nuxtjs/axios"],
+  axios: {
+    proxyHeaders: false,
+    credentials: false,
+  },
 };
