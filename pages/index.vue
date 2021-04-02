@@ -2,7 +2,7 @@
   <div class="backgroundDark text-white">
     <Header />
     <About />
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
