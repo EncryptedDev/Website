@@ -15,6 +15,8 @@ module.exports = {
       colors: {
         darkGrey: "#191919",
         lightGrey: "#1c1c1c",
+        blurple: '#7289da',
+        darkerblurple: '#6c82cf'
       },
     },
   },
