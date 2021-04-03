@@ -12,6 +12,6 @@ import About from "../components/About";
 import Footer from "../components/Footer";
 
 export default {
-  components: { About, Header, Footer },
+  components: { About, Header, Footer }
 };
 </script>

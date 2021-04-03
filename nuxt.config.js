@@ -1,17 +1,17 @@
 export default {
   server: {
     //   host: "0.0.0.0",
-    port: 7788,
+    port: 7788
   },
   head: {
     script: [
       {
-        src: "https://kit.fontawesome.com/e904827701.js",
-      },
+        src: "https://kit.fontawesome.com/e904827701.js"
+      }
     ],
     title: "EncryptedDev",
     htmlAttrs: {
-      lang: "en",
+      lang: "en"
     },
     meta: [
       { charset: "utf-8" },
@@ -20,26 +20,26 @@ export default {
       {
         hid: "og:site_name",
         name: "og:site_name",
-        content: "EncryptedDev",
+        content: "EncryptedDev"
       },
       {
         hid: "description",
         name: "description",
-        content: "An aspiring developer. A developer's portfolio.",
+        content: "An aspiring developer. A developer's portfolio."
       },
       {
         hid: "og:image",
         name: "og:image",
-        content: "https://encrypteddev.com/assets/img/logo.png",
-      },
+        content: "https://encrypteddev.com/assets/img/logo.png"
+      }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/logo.png" }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/logo.png" }]
   },
   css: ["~/assets/css/style.css"],
   components: true,
-  buildModules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "@nuxtjs/axios"],
+  buildModules: ["@nuxtjs/tailwindcss", "@nuxtjs/axios"],
   axios: {
     proxyHeaders: false,
-    credentials: false,
-  },
+    credentials: false
+  }
 };

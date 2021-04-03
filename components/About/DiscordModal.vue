@@ -2,6 +2,8 @@
   <div
     class="bg-darkGrey rounded-3xl my-5 w-1/2 py-5 px-20 content text-center mx-auto hover:bg-lightGrey"
   >
+  {{ getStatus }}
+
     <div class="flex flex-row">
       <div class="w-1/4 my-auto">
         <img
@@ -25,21 +27,23 @@ export default {
   data() {
     return {
       discordData: [],
-      getStatus: {},
     };
   },
   mounted() {
     this.$axios
-      .$get("http://localhost:3000/presences?userID=564434085708038144")
+      .$get("http://localhost:3000/presences/564434085708038144")
       .then((res) => {
         this.discordData = res.data;
       });
   },
-  // computed: {
-  //   getStatus() {
-  //     const status = this.discordData;
-  //     console.log(status);
-  //   }
-  // }
+  computed: {
+    async getStatus() {
+      let status;
+       if(this.discordData) {
+        status = false;
+      }
+      console.log(status);
+    }
+  }
 };
 </script>

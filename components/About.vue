@@ -21,6 +21,6 @@ import Setup from "../components/About/Setup";
 import Socials from "../components/About/Socials";
 
 export default {
-  components: { DiscordModal, Introduction, Setup, Socials },
+  components: { DiscordModal, Introduction, Setup, Socials }
 };
 </script>
